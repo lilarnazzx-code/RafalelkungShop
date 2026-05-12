@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RAFALELKUNG STORE FULL</title>
+<title>RAFALELKUNG STORE PRO FULL</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -14,174 +14,150 @@ body{
 font-family:'Kanit',sans-serif;
 background:#000;
 color:white;
-overflow-x:hidden;
 }
 
-/* 🌌 BACKGROUND */
-body::before{
-content:"";
-position:fixed;
-width:200%;
-height:200%;
-background:
-radial-gradient(circle at 20% 20%,rgba(0,255,255,0.10),transparent),
-radial-gradient(circle at 80% 80%,rgba(255,0,100,0.08),transparent);
-animation:bg 10s infinite alternate;
-pointer-events:none;
-z-index:0;
+header{
+position:sticky;
+top:0;
+z-index:9999;
+background:rgba(0,0,0,0.8);
+backdrop-filter:blur(10px);
+padding:10px;
+border-bottom:1px solid cyan;
 }
 
-@keyframes bg{
-0%{transform:scale(1);}
-100%{transform:scale(1.15) rotate(5deg);}
+input{
+width:100%;
+padding:10px;
+border-radius:10px;
+background:#111;
+color:white;
+border:1px solid cyan;
+margin-top:10px;
 }
 
-/* 🧱 CARD */
 .card{
 background:rgba(0,0,0,0.6);
-backdrop-filter:blur(10px);
 border:1px solid rgba(0,255,255,0.2);
 border-radius:15px;
-transition:0.25s;
-position:relative;
-z-index:2;
+padding:15px;
+margin-top:12px;
+transition:0.2s;
 }
 
 .card:hover{
-transform:scale(1.05);
-box-shadow:0 0 25px cyan,0 0 50px magenta;
+transform:scale(1.03);
+box-shadow:0 0 20px cyan;
 }
 
 .btn{
 display:block;
-padding:10px;
 margin-top:10px;
+padding:10px;
 text-align:center;
-background:linear-gradient(90deg,#ff0000,#ff8800);
 border-radius:10px;
+background:linear-gradient(90deg,#ff0000,#ff8800);
 font-weight:bold;
 color:white;
 text-decoration:none;
 }
 
-/* ❄️ FX */
-#fx{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-pointer-events:none;
-z-index:9998;
+.hidden{display:none;}
+
+.tag{
+font-size:12px;
+color:cyan;
 }
 </style>
 </head>
 
 <body>
 
-<canvas id="fx"></canvas>
+<header>
+<h1 style="text-align:center;">🌌 RAFALELKUNG STORE PRO FULL</h1>
+<input id="search" placeholder="🔍 ค้นหาไฟล์...">
+</header>
 
-<div style="position:relative;z-index:2;padding:20px;">
+<div style="padding:15px;">
 
-<h1 style="text-align:center;font-size:28px;">
-🌌 RAFALELKUNG STORE FULL SYSTEM
-</h1>
+<!-- MOD / TOOL -->
+<h2 class="tag">🔥 MOD / TOOL</h2>
 
-<!-- ===== MOD / TOOL ===== -->
-<div class="card" style="margin-top:20px;padding:15px;">
-<h2>🎯 ยิงตัวโดนหัว V2</h2>
-<a class="btn" href="https://www.mediafire.com/file/2de22ds4icdlzw4/valixGOLFMINITV.xapk/file?dkey=s5w8ow5p9kk&r=64">DOWNLOAD</a>
+<div class="card" data-name="mt manager file tool">
+<h3>🗂️ MT Manager</h3>
+<a class="btn" href="https://www.mediafire.com/file/7o4m8dw2mcj5vci/MTManager+By+%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%89%E0%B8%B2+%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%9F%E0%B8%A3%E0%B8%B5.apk/file">DOWNLOAD</a>
 </div>
 
-<div class="card" style="margin-top:15px;padding:15px;">
-<h2>🎯 ยิงตัวโดนหัว V1</h2>
-<a class="btn" href="https://www.mediafire.com/file/v1mbpdilo7xmlou/VALI-MODS-V11-GOLFMINITV.xapk/file?dkey=f3x5q5lh4pj&r=855">DOWNLOAD</a>
+<div class="card" data-name="lk root tool">
+<h3>🔧 LK ROOT TOOL V45</h3>
+<a class="btn" href="https://www.mediafire.com/file/81x0p6pjqxwhhfd/LK+TEAM+V45+ROOT.apk/file">DOWNLOAD</a>
 </div>
 
-<div class="card" style="margin-top:15px;padding:15px;">
-<h2>🖤 มอดลีคเซ็ตดำ</h2>
-<a class="btn" href="https://www.mediafire.com/file/m82li8i3rbcykcc/%E0%B8%A1%E0%B8%AD%E0%B8%94%E0%B8%A5%E0%B8%B5%E0%B8%84%E0%B9%80%E0%B8%8A%E0%B9%87%E0%B8%95%E0%B8%94%E0%B8%B3.zip/file?dkey=hdaeuu3r7lx&r=804">DOWNLOAD</a>
+<div class="card" data-name="vpn">
+<h3>⚡ VPN NO ADS</h3>
+<a class="btn" href="https://www.mediafire.com/file/x45a5ah7aofthlt/VPN-NO-ADS_GOLFMINITV.apk/file">DOWNLOAD</a>
 </div>
 
-<div class="card" style="margin-top:15px;padding:15px;">
-<h2>⚡ VPN NO ADS</h2>
-<a class="btn" href="https://www.mediafire.com/file/x45a5ah7aofthlt/VPN-NO-ADS_GOLFMINITV.apk/file?dkey=9hlqpu39cdo&r=1241">DOWNLOAD</a>
+<div class="card" data-name="ยิงตัวโดนหัว">
+<h3>🎯 ยิงตัวโดนหัว V2</h3>
+<a class="btn" href="https://www.mediafire.com/file/2de22ds4icdlzw4/valixGOLFMINITV.xapk/file">DOWNLOAD</a>
 </div>
 
-<div class="card" style="margin-top:15px;padding:15px;">
-<h2>📡 ไฟล์เสาอากาศ</h2>
-<a class="btn" href="https://www.mediafire.com/file/t5neenbkixrb9t6/FF+%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C%E0%B9%80%E0%B8%AA%E0%B8%B2%E0%B8%AD%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A8+++%E0%B8%A1%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%81%E0%B8%B4%E0%B8%99%E0%B8%9B%E0%B8%B7%E0%B8%99+%28%E0%B8%9F%E0%B8%B5%E0%B8%9F%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%81%29+V.26+By+%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%89%E0%B8%B2+%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%9F%E0%B8%A3%E0%B8%B5.zip/file?dkey=4swc2u9ljxe&r=309">DOWNLOAD</a>
+<div class="card" data-name="ขยายดาเมจ">
+<h3>💥 ขยายดาเมจ V2</h3>
+<a class="btn" href="https://www.mediafire.com/file/4gy73xxex93xiox/FF+...">DOWNLOAD</a>
 </div>
 
-<div class="card" style="margin-top:15px;padding:15px;">
-<h2>🔥 หมัดไฟ</h2>
-<a class="btn" href="https://www.mediafire.com/file/s73ati973z63j4x/FF+%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C%E0%B8%AB%E0%B8%A1%E0%B8%B1%E0%B8%94+%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%A5%E0%B8%B0%E0%B8%84%E0%B8%A3%E0%B8%8A%E0%B8%B2%E0%B8%A2+%28%E0%B8%9F%E0%B8%B5%E0%B8%9F%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%81%29+V.29+By+%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%89%E0%B8%B2+%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%9F%E0%B8%A3%E0%B8%B5.zip/file?dkey=cc3ygipm54w&r=1215">DOWNLOAD</a>
+<!-- RESOURCE -->
+<h2 class="tag">📦 RESOURCE</h2>
+
+<div class="card" data-name="ทรัพยากร ฟีฟาย">
+<h3>📦 ทรัพยากรฟีฟาย V3</h3>
+<a class="btn" href="https://www.mediafire.com/file/z0jpmwi5g4bzryw/FF+...">DOWNLOAD</a>
 </div>
 
-<div class="card" style="margin-top:15px;padding:15px;">
-<h2>🚧 ทะลุกำแพง</h2>
-<a class="btn" href="https://www.mediafire.com/file/woorvj7dwtpkwdj/FF+%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C%E0%B8%97%E0%B8%B0%E0%B8%A5%E0%B8%B8%E0%B8%81%E0%B8%B3%E0%B9%81%E0%B8%9E%E0%B8%87+%E0%B9%82%E0%B8%8B%E0%B8%99%E0%B8%9F%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B9%84%E0%B8%95%E0%B8%A5%E0%B9%8C+%28%E0%B8%9F%E0%B8%B5%E0%B8%9F%E0%B8%B2%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%94%E0%B8%B2%29+V.1+Review+By+%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%89%E0%B8%B2+%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%9F%E0%B8%A3%E0%B8%B5.zip/file">DOWNLOAD</a>
+<div class="card" data-name="ทรัพยากร ฟีฟายแม็ก">
+<h3>📦 ทรัพยากรฟีฟายแม็ก V3</h3>
+<a class="btn" href="https://www.mediafire.com/file/1c0s6zsp894ldnu/FF+...">DOWNLOAD</a>
 </div>
 
-<div class="card" style="margin-top:15px;padding:15px;">
-<h2>💥 ขยายดาเมจ V2</h2>
-<a class="btn" href="https://www.mediafire.com/file/4gy73xxex93xiox/FF+%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B9%80%E0%B8%81%E0%B8%A1%E0%B8%82%E0%B8%A2%E0%B8%B2%E0%B8%A2%E0%B8%94%E0%B8%B2%E0%B9%80%E0%B8%A1%E0%B8%88+++%E0%B8%A1%E0%B8%AD%E0%B8%87+V.2+Review+By+%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%89%E0%B8%B2+%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%9F%E0%B8%A3%E0%B8%B5.apks/file">DOWNLOAD</a>
+<div class="card" data-name="ดินน้ำมัน map">
+<h3>🟤 ไฟล์ภาพดินน้ำมัน V1</h3>
+<a class="btn" href="https://www.mediafire.com/file/l10lpjkojn2xjfg/FF+...">DOWNLOAD</a>
 </div>
 
-<!-- ===== ANIME SKINS ===== -->
-<div class="card" style="margin-top:15px;padding:15px;">
-<h2>🏴‍☠️ ลูฟี่ V30</h2>
-<a class="btn" href="https://www.mediafire.com/file/2t7zqinfkjccsp9/FF+%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C%E0%B8%AA%E0%B8%81%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88+1+%E0%B8%A5%E0%B8%B9%E0%B8%9F%E0%B8%B5%E0%B9%88+%28%E0%B8%9F%E0%B8%B5%E0%B8%9F%E0%B8%B2%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%94%E0%B8%B2%29+V.30+Kairos+By+%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%89%E0%B8%B2+%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%9F%E0%B8%A3%E0%B8%B5.zip/file">DOWNLOAD</a>
+<!-- ANIME -->
+<h2 class="tag">🎌 SKIN</h2>
+
+<div class="card" data-name="โกโจ">
+<h3>🔵 โกโจ V30</h3>
+<a class="btn" href="#">DOWNLOAD</a>
 </div>
 
-<div class="card" style="margin-top:15px;padding:15px;">
-<h2>🌀 ซาซึเกะ V30</h2>
-<a class="btn" href="https://www.mediafire.com/file/ctrhowag4ms9uj5/FF+%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C%E0%B8%AA%E0%B8%81%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88+4+%E0%B8%AD%E0%B8%B8%E0%B8%88%E0%B8%B4%E0%B8%A7%E0%B8%B0+%E0%B8%8B%E0%B8%B2%E0%B8%AA%E0%B8%B6%E0%B9%80%E0%B8%81%E0%B8%B0+%28%E0%B8%9F%E0%B8%B5%E0%B8%9F%E0%B8%B2%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%94%E0%B8%B2%29+V.30+Alok+By+%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%89%E0%B8%B2+%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%9F%E0%B8%A3%E0%B8%B5.zip/file">DOWNLOAD</a>
+<div class="card" data-name="ซาซึเกะ">
+<h3>🌀 ซาซึเกะ V30</h3>
+<a class="btn" href="#">DOWNLOAD</a>
 </div>
 
-<div class="card" style="margin-top:15px;padding:15px;">
-<h2>🔵 โกโจ V30</h2>
-<a class="btn" href="https://www.mediafire.com/file/1259qwpxhxdwbxe/FF+%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C%E0%B8%AA%E0%B8%81%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88+6+Gojo+%28%E0%B8%9F%E0%B8%B5%E0%B8%9F%E0%B8%B2%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%94%E0%B8%B2%29+V.30+Santino+By+%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%89%E0%B8%B2+%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%9F%E0%B8%A3%E0%B8%B5.zip/file">DOWNLOAD</a>
-</div>
-
-<div class="card" style="margin-top:15px;padding:15px;">
-<h2>🔥 เบจิต้า V30</h2>
-<a class="btn" href="https://www.mediafire.com/file/d48wfpsqakxl5r9/FF+%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C%E0%B8%AA%E0%B8%81%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88+5+%E0%B9%80%E0%B8%9A%E0%B8%88%E0%B8%B4%E0%B8%95%E0%B9%89%E0%B8%B2+%28%E0%B8%9F%E0%B8%B5%E0%B8%9F%E0%B8%B2%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%94%E0%B8%B2%29+V.30+Kairos+By+%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%89%E0%B8%B2+%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%9F%E0%B8%A3%E0%B8%B5.zip/file">DOWNLOAD</a>
-</div>
-
-<div class="card" style="margin-top:15px;padding:15px;">
-<h2>🟣 มาดาระ V30</h2>
-<a class="btn" href="https://www.mediafire.com/file/vmxw4978v3cfozm/FF+%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C%E0%B8%AA%E0%B8%81%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88+3+%E0%B8%AD%E0%B8%B8%E0%B8%88%E0%B8%B4%E0%B8%A7%E0%B8%B0+%E0%B8%A1%E0%B8%B2%E0%B8%94%E0%B8%B2%E0%B8%A3%E0%B8%B0+%28%E0%B8%9F%E0%B8%B5%E0%B8%9F%E0%B8%B2%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%94%E0%B8%B2%29+V.30+Wolfrahh+By+%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%89%E0%B8%B2+%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%9F%E0%B8%A3%E0%B8%B5.zip/file">DOWNLOAD</a>
+<div class="card" data-name="ลูฟี่">
+<h3>🏴‍☠️ ลูฟี่ V30</h3>
+<a class="btn" href="#">DOWNLOAD</a>
 </div>
 
 </div>
 
-<!-- FX -->
 <script>
-const c=document.getElementById("fx");
-const ctx=c.getContext("2d");
-c.width=innerWidth;
-c.height=innerHeight;
+const search=document.getElementById("search");
+const cards=document.querySelectorAll(".card");
 
-let p=[];
-for(let i=0;i<120;i++){
-p.push({x:Math.random()*c.width,y:Math.random()*c.height,r:Math.random()*2,v:Math.random()*1});
-}
+search.addEventListener("input",()=>{
+let val=search.value.toLowerCase();
 
-function draw(){
-ctx.clearRect(0,0,c.width,c.height);
-ctx.fillStyle="white";
-p.forEach(s=>{
-ctx.beginPath();
-ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
-ctx.fill();
-s.y+=s.v+0.4;
-s.x+=Math.sin(s.y*0.01);
-if(s.y>c.height){s.y=0;s.x=Math.random()*c.width;}
+cards.forEach(c=>{
+let name=c.getAttribute("data-name");
+c.classList.toggle("hidden",!name.includes(val));
 });
-requestAnimationFrame(draw);
-}
-draw();
+});
 </script>
 
 </body>
