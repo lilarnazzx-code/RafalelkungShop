@@ -3,172 +3,380 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RAFALELKUNG STORE PRO</title>
-
-<script src="https://cdn.tailwindcss.com"></script>
+<title>RAFALELKUNG SHOP</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap');
 
 body{
-font-family:'Kanit',sans-serif;
-background:#000;
+font-family:'Prompt',sans-serif;
+margin:0;
 color:white;
+overflow-x:hidden;
+
+background:
+linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.82)),
+url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1920&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
 }
 
-header{
-position:sticky;
-top:0;
-z-index:9999;
-background:rgba(0,0,0,0.85);
-backdrop-filter:blur(10px);
-padding:12px;
-border-bottom:1px solid cyan;
-}
+/* 🌈 RAFALELKUNG SHOP */
+.title{
+text-align:center;
+font-size:34px;
+font-weight:bold;
+margin-top:25px;
 
-input{
-width:100%;
-padding:10px;
-border-radius:10px;
-background:#111;
 color:white;
-border:1px solid cyan;
-margin-top:10px;
+
+/* 🌈 นีออนเรนโบว์ */
+text-shadow:
+0 0 5px #ff0000,
+0 0 10px #ff7b00,
+0 0 15px #ffee00,
+0 0 20px #00ff2a,
+0 0 25px #00e5ff,
+0 0 30px #002bff,
+0 0 35px #9500ff;
+
+animation:rainbowGlow 3s linear infinite;
 }
 
-.card{
-background:rgba(0,0,0,0.6);
-border:1px solid rgba(0,255,255,0.25);
-border-radius:15px;
+@keyframes rainbowGlow{
+0%{
+filter:hue-rotate(0deg);
+}
+100%{
+filter:hue-rotate(360deg);
+}
+}
+
+/* 💖 ตัวหนังสืออื่น */
+.menu-box h2,
+.download-item,
+.back-btn{
+
+color:white;
+
+/* 💖 นีออนชมพู */
+text-shadow:
+0 0 5px #ff4dff,
+0 0 10px #ff00ff,
+0 0 20px #ff66ff;
+}
+
+/* 📦 MENU */
+.main-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.menu-box{
+background:rgba(15,20,35,0.90);
+
+border:1px solid #00e5ff;
+border-radius:20px;
+
+padding:25px;
+text-align:center;
+
+cursor:pointer;
+
+box-shadow:
+0 0 8px #00e5ff,
+0 0 20px rgba(0,229,255,0.5);
+
+transition:0.25s;
+}
+
+.menu-box:hover{
+transform:scale(1.03);
+
+box-shadow:
+0 0 15px #00e5ff,
+0 0 35px #9500ff;
+}
+
+/* 📄 PAGE */
+.page{
+display:none;
+padding:20px;
+}
+
+/* 📥 DOWNLOAD */
+.download-item{
+display:block;
+
 padding:15px;
 margin-top:12px;
-transition:0.2s;
-}
 
-.card:hover{
-transform:scale(1.03);
-box-shadow:0 0 20px cyan;
-}
+background:rgba(255,255,255,0.05);
 
-.btn{
-display:block;
-margin-top:10px;
-padding:10px;
-text-align:center;
-border-radius:10px;
-background:linear-gradient(90deg,#ff0000,#ff8800);
-font-weight:bold;
+border:1px solid #00e5ff;
+border-radius:12px;
+
 color:white;
 text-decoration:none;
+
+box-shadow:
+0 0 8px #00e5ff,
+0 0 20px rgba(0,229,255,0.5);
+
+transition:0.25s;
 }
 
-.hidden{display:none;}
+.download-item:hover{
+background:#00e5ff;
+color:black;
 
-.tag{
-font-size:12px;
-color:cyan;
-margin-top:15px;
+transform:scale(1.03);
+
+box-shadow:
+0 0 15px #00e5ff,
+0 0 35px #9500ff;
+}
+
+/* ⬅ BACK */
+.back-btn{
+background:#111827;
+
+border:1px solid #00e5ff;
+
+padding:10px 15px;
+border-radius:10px;
+
+font-weight:bold;
+margin-bottom:20px;
+cursor:pointer;
+
+box-shadow:
+0 0 8px #00e5ff,
+0 0 20px rgba(0,229,255,0.5);
+}
+
+/* ❄️ SNOW */
+#snow{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h1 style="text-align:center;">🌌 RAFALELKUNG STORE PRO FULL</h1>
-<input id="search" placeholder="🔍 ค้นหาไฟล์...">
-</header>
+<canvas id="snow"></canvas>
 
-<div style="padding:15px;">
+<h1 class="title">⚡ RAFALELKUNG SHOP ⚡</h1>
 
-<!-- MOD / TOOL -->
-<h2 class="tag">🔥 MOD / TOOL</h2>
+<!-- 📦 MAIN -->
+<div class="main-grid" id="mainMenu">
 
-<div class="card" data-name="mt manager">
-<h3>🗂️ MT Manager</h3>
-<a class="btn" href="https://www.mediafire.com/file/7o4m8dw2mcj5vci/MTManager+By+%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%89%E0%B8%B2+%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%9F%E0%B8%A3%E0%B8%B5.apk/file">DOWNLOAD</a>
+<div class="menu-box" onclick="showPage('skinPage')">
+<h2>🎌 ไฟล์สกิน</h2>
+<p>กดเพื่อเข้า</p>
 </div>
 
-<div class="card" data-name="lk root">
-<h3>🔧 LK ROOT TOOL</h3>
-<a class="btn" href="https://www.mediafire.com/file/81x0p6pjqxwhhfd/LK+TEAM+V45+ROOT.apk/file">DOWNLOAD</a>
+<div class="menu-box" onclick="showPage('modPage')">
+<h2>🎯 โปรเกม</h2>
+<p>กดเพื่อเข้า</p>
 </div>
 
-<div class="card" data-name="vpn">
-<h3>⚡ VPN NO ADS</h3>
-<a class="btn" href="https://www.mediafire.com/file/x45a5ah7aofthlt/VPN-NO-ADS_GOLFMINITV.apk/file">DOWNLOAD</a>
+<div class="menu-box" onclick="showPage('resourcePage')">
+<h2>📦 ไฟล์เสริม</h2>
+<p>กดเพื่อเข้า</p>
 </div>
 
-<div class="card" data-name="ยิงตัวโดนหัว v2">
-<h3>🎯 ยิงตัวโดนหัว V2</h3>
-<a class="btn" href="https://www.mediafire.com/file/2de22ds4icdlzw4/valixGOLFMINITV.xapk/file">DOWNLOAD</a>
+<div class="menu-box" onclick="showPage('toolPage')">
+<h2>🛠️ เครื่องมือ</h2>
+<p>กดเพื่อเข้า</p>
 </div>
 
-<div class="card" data-name="ขยายดาเมจ">
-<h3>💥 ขยายดาเมจ V2</h3>
-<a class="btn" href="https://www.mediafire.com/file/4gy73xxex93xiox/FF+%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B9%80%E0%B8%81%E0%B8%A1%E0%B8%82%E0%B8%A2%E0%B8%B2%E0%B8%A2%E0%B8%94%E0%B8%B2%E0%B9%80%E0%B8%A1%E0%B8%88+++%E0%B8%A1%E0%B8%AD%E0%B8%87+V.2.apks/file">DOWNLOAD</a>
 </div>
 
-<!-- RESOURCE -->
-<h2 class="tag">📦 RESOURCE</h2>
+<!-- 🎌 SKIN PAGE -->
+<div class="page" id="skinPage">
 
-<div class="card" data-name="ทรัพยากรฟีฟาย">
-<h3>📦 ฟีฟายธรรมดา V3</h3>
-<a class="btn" href="https://www.mediafire.com/file/z0jpmwi5g4bzryw/FF+%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A3.zip/file">DOWNLOAD</a>
+<button class="back-btn" onclick="backHome()">⬅ กลับ</button>
+
+<a class="download-item" href="#">
+🏴‍☠️ ลูฟี่
+<br>
+<small>กดเพื่อดาวโหลด</small>
+</a>
+
+<a class="download-item" href="#">
+🔵 โกโจ
+<br>
+<small>กดเพื่อดาวโหลด</small>
+</a>
+
+<a class="download-item" href="#">
+🌀 ซาซึเกะ
+<br>
+<small>กดเพื่อดาวโหลด</small>
+</a>
+
+<a class="download-item" href="#">
+🔥 เบจิต้า
+<br>
+<small>กดเพื่อดาวโหลด</small>
+</a>
+
+<a class="download-item" href="#">
+🟣 มาดาระ
+<br>
+<small>กดเพื่อดาวโหลด</small>
+</a>
+
 </div>
 
-<div class="card" data-name="ทรัพยากรแม็ก">
-<h3>📦 ฟีฟายแม็ก V3</h3>
-<a class="btn" href="https://www.mediafire.com/file/1c0s6zsp894ldnu/FF+%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A3%28%E0%B8%9F%E0%B8%B5%E0%B8%9F%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%87%E0%B8%81%29.zip/file">DOWNLOAD</a>
+<!-- 🎯 MOD PAGE -->
+<div class="page" id="modPage">
+
+<button class="back-btn" onclick="backHome()">⬅ กลับ</button>
+
+<a class="download-item" href="#">
+🎯 ยิงตัวโดนหัว V1
+<br>
+<small>กดเพื่อดาวโหลด</small>
+</a>
+
+<a class="download-item" href="#">
+🎯 ยิงตัวโดนหัว V2
+<br>
+<small>กดเพื่อดาวโหลด</small>
+</a>
+
+<a class="download-item" href="#">
+💥 ขยายดาเมจ
+<br>
+<small>กดเพื่อดาวโหลด</small>
+</a>
+
+<a class="download-item" href="#">
+🔧 LK ROOT
+<br>
+<small>กดเพื่อดาวโหลด</small>
+</a>
+
 </div>
 
-<div class="card" data-name="ดินน้ำมัน">
-<h3>🟤 ดินน้ำมัน V1</h3>
-<a class="btn" href="https://www.mediafire.com/file/l10lpjkojn2xjfg/FF+%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C%E0%B9%81%E0%B8%A1%E0%B8%9E%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A1%E0%B8%B1%E0%B8%99.zip/file">DOWNLOAD</a>
+<!-- 📦 RESOURCE PAGE -->
+<div class="page" id="resourcePage">
+
+<button class="back-btn" onclick="backHome()">⬅ กลับ</button>
+
+<a class="download-item" href="#">
+📦 ฟีฟายธรรมดา
+<br>
+<small>กดเพื่อดาวโหลด</small>
+</a>
+
+<a class="download-item" href="#">
+📦 ฟีฟายแม็ก
+<br>
+<small>กดเพื่อดาวโหลด</small>
+</a>
+
 </div>
 
-<!-- SKIN -->
-<h2 class="tag">🎌 SKIN</h2>
+<!-- 🛠 TOOL PAGE -->
+<div class="page" id="toolPage">
 
-<div class="card" data-name="โกโจ">
-<h3>🔵 โกโจ V30</h3>
-<a class="btn" href="https://www.mediafire.com/file/1259qwpxhxdwbxe/file">DOWNLOAD</a>
-</div>
+<button class="back-btn" onclick="backHome()">⬅ กลับ</button>
 
-<div class="card" data-name="ซาซึเกะ">
-<h3>🌀 ซาซึเกะ V30</h3>
-<a class="btn" href="https://www.mediafire.com/file/ctrhowag4ms9uj5/file">DOWNLOAD</a>
-</div>
+<a class="download-item" href="#">
+⚡ VPN NO ADS
+<br>
+<small>กดเพื่อดาวโหลด</small>
+</a>
 
-<div class="card" data-name="ลูฟี่">
-<h3>🏴‍☠️ ลูฟี่ V30</h3>
-<a class="btn" href="https://www.mediafire.com/file/2t7zqinfkjccsp9/file">DOWNLOAD</a>
-</div>
-
-<div class="card" data-name="เบจิต้า">
-<h3>🔥 เบจิต้า V30</h3>
-<a class="btn" href="https://www.mediafire.com/file/d48wfpsqakxl5r9/file">DOWNLOAD</a>
-</div>
-
-<div class="card" data-name="มาดาระ">
-<h3>🟣 มาดาระ V30</h3>
-<a class="btn" href="https://www.mediafire.com/file/vmxw4978v3cfozm/file">DOWNLOAD</a>
-</div>
+<a class="download-item" href="#">
+🗂️ MT MANAGER
+<br>
+<small>กดเพื่อดาวโหลด</small>
+</a>
 
 </div>
 
 <script>
-const search=document.getElementById("search");
-const cards=document.querySelectorAll(".card");
 
-search.addEventListener("input",()=>{
-let val=search.value.toLowerCase();
-cards.forEach(c=>{
-let name=c.getAttribute("data-name");
-c.classList.toggle("hidden",!name.includes(val));
+/* 📂 เปิดหน้า */
+function showPage(id){
+
+document.getElementById('mainMenu').style.display='none';
+
+document.querySelectorAll('.page').forEach(p=>{
+p.style.display='none';
 });
+
+document.getElementById(id).style.display='block';
+}
+
+/* ⬅ กลับ */
+function backHome(){
+
+document.getElementById('mainMenu').style.display='grid';
+
+document.querySelectorAll('.page').forEach(p=>{
+p.style.display='none';
 });
+
+}
+
+/* ❄️ หิมะ */
+const snow=document.getElementById('snow');
+const ctx=snow.getContext('2d');
+
+snow.width=window.innerWidth;
+snow.height=window.innerHeight;
+
+let flakes=[];
+
+for(let i=0;i<100;i++){
+flakes.push({
+x:Math.random()*snow.width,
+y:Math.random()*snow.height,
+r:Math.random()*4+1
+});
+}
+
+function drawSnow(){
+
+ctx.clearRect(0,0,snow.width,snow.height);
+
+ctx.fillStyle='white';
+
+flakes.forEach(f=>{
+
+ctx.beginPath();
+ctx.arc(f.x,f.y,f.r,0,Math.PI*2);
+ctx.fill();
+
+f.y+=1;
+
+if(f.y>snow.height){
+f.y=0;
+f.x=Math.random()*snow.width;
+}
+
+});
+
+requestAnimationFrame(drawSnow);
+}
+
+drawSnow();
+
 </script>
 
 </body>
-</html>
+  </html>
