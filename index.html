@@ -23,7 +23,7 @@ background-position:center;
 background-attachment:fixed;
 }
 
-/* 🌈 RAFALELKUNG SHOP */
+/* 🌈 TITLE */
 .title{
 text-align:center;
 font-size:34px;
@@ -32,7 +32,6 @@ margin-top:25px;
 
 color:white;
 
-/* 🌈 นีออนเรนโบว์ */
 text-shadow:
 0 0 5px #ff0000,
 0 0 10px #ff7b00,
@@ -46,26 +45,8 @@ animation:rainbowGlow 3s linear infinite;
 }
 
 @keyframes rainbowGlow{
-0%{
-filter:hue-rotate(0deg);
-}
-100%{
-filter:hue-rotate(360deg);
-}
-}
-
-/* 💖 ตัวหนังสืออื่น */
-.menu-box h2,
-.download-item,
-.back-btn{
-
-color:white;
-
-/* 💖 นีออนชมพู */
-text-shadow:
-0 0 5px #ff4dff,
-0 0 10px #ff00ff,
-0 0 20px #ff66ff;
+0%{filter:hue-rotate(0deg);}
+100%{filter:hue-rotate(360deg);}
 }
 
 /* 📦 MENU */
@@ -78,28 +59,22 @@ padding:20px;
 
 .menu-box{
 background:rgba(15,20,35,0.90);
-
 border:1px solid #00e5ff;
 border-radius:20px;
-
 padding:25px;
 text-align:center;
-
 cursor:pointer;
-
-box-shadow:
-0 0 8px #00e5ff,
-0 0 20px rgba(0,229,255,0.5);
-
+box-shadow:0 0 10px #00e5ff;
 transition:0.25s;
 }
 
 .menu-box:hover{
 transform:scale(1.03);
+box-shadow:0 0 25px #00e5ff;
+}
 
-box-shadow:
-0 0 15px #00e5ff,
-0 0 35px #9500ff;
+.menu-box h2{
+text-shadow:0 0 10px #ff00ff;
 }
 
 /* 📄 PAGE */
@@ -111,52 +86,35 @@ padding:20px;
 /* 📥 DOWNLOAD */
 .download-item{
 display:block;
-
 padding:15px;
 margin-top:12px;
 
 background:rgba(255,255,255,0.05);
-
 border:1px solid #00e5ff;
 border-radius:12px;
 
 color:white;
 text-decoration:none;
 
-box-shadow:
-0 0 8px #00e5ff,
-0 0 20px rgba(0,229,255,0.5);
-
-transition:0.25s;
+box-shadow:0 0 8px #00e5ff;
+transition:0.2s;
 }
 
 .download-item:hover{
 background:#00e5ff;
 color:black;
-
-transform:scale(1.03);
-
-box-shadow:
-0 0 15px #00e5ff,
-0 0 35px #9500ff;
+transform:scale(1.02);
 }
 
 /* ⬅ BACK */
 .back-btn{
-background:#111827;
-
-border:1px solid #00e5ff;
-
+background:#00e5ff;
+border:none;
 padding:10px 15px;
 border-radius:10px;
-
 font-weight:bold;
 margin-bottom:20px;
 cursor:pointer;
-
-box-shadow:
-0 0 8px #00e5ff,
-0 0 20px rgba(0,229,255,0.5);
 }
 
 /* ❄️ SNOW */
@@ -177,163 +135,117 @@ pointer-events:none;
 
 <h1 class="title">⚡ RAFALELKUNG SHOP ⚡</h1>
 
-<!-- 📦 MAIN -->
+<!-- 📦 MAIN MENU -->
 <div class="main-grid" id="mainMenu">
 
 <div class="menu-box" onclick="showPage('skinPage')">
 <h2>🎌 ไฟล์สกิน</h2>
-<p>กดเพื่อเข้า</p>
+<p>กดเพื่อดาวโหลด</p>
 </div>
 
 <div class="menu-box" onclick="showPage('modPage')">
 <h2>🎯 โปรเกม</h2>
-<p>กดเพื่อเข้า</p>
+<p>กดเพื่อดาวโหลด</p>
 </div>
 
 <div class="menu-box" onclick="showPage('resourcePage')">
 <h2>📦 ไฟล์เสริม</h2>
-<p>กดเพื่อเข้า</p>
+<p>กดเพื่อดาวโหลด</p>
 </div>
 
 <div class="menu-box" onclick="showPage('toolPage')">
 <h2>🛠️ เครื่องมือ</h2>
-<p>กดเพื่อเข้า</p>
+<p>กดเพื่อดาวโหลด</p>
 </div>
 
 </div>
 
-<!-- 🎌 SKIN PAGE -->
+<!-- 🎌 SKIN -->
 <div class="page" id="skinPage">
-
 <button class="back-btn" onclick="backHome()">⬅ กลับ</button>
 
-<a class="download-item" href="#">
-🏴‍☠️ ลูฟี่
-<br>
-<small>กดเพื่อดาวโหลด</small>
+<a class="download-item" href="https://www.mediafire.com/file/2t7zqinfkjccsp9/file.zip/file" target="_blank">
+🏴‍☠️ ลูฟี่<br><small>กดเพื่อดาวโหลด</small>
 </a>
 
-<a class="download-item" href="#">
-🔵 โกโจ
-<br>
-<small>กดเพื่อดาวโหลด</small>
+<a class="download-item" href="https://www.mediafire.com/file/1259qwpxhxdwbxe/file.zip/file" target="_blank">
+🔵 โกโจ<br><small>กดเพื่อดาวโหลด</small>
 </a>
 
-<a class="download-item" href="#">
-🌀 ซาซึเกะ
-<br>
-<small>กดเพื่อดาวโหลด</small>
+<a class="download-item" href="https://www.mediafire.com/file/ctrhowag4ms9uj5/file.zip/file" target="_blank">
+🌀 ซาซึเกะ<br><small>กดเพื่อดาวโหลด</small>
 </a>
 
-<a class="download-item" href="#">
-🔥 เบจิต้า
-<br>
-<small>กดเพื่อดาวโหลด</small>
+<a class="download-item" href="https://www.mediafire.com/file/d48wfpsqakxl5r9/file.zip/file" target="_blank">
+🔥 เบจิต้า<br><small>กดเพื่อดาวโหลด</small>
 </a>
 
-<a class="download-item" href="#">
-🟣 มาดาระ
-<br>
-<small>กดเพื่อดาวโหลด</small>
+<a class="download-item" href="https://www.mediafire.com/file/vmxw4978v3cfozm/file.zip/file" target="_blank">
+🟣 มาดาระ<br><small>กดเพื่อดาวโหลด</small>
 </a>
-
 </div>
 
-<!-- 🎯 MOD PAGE -->
+<!-- 🎯 MOD -->
 <div class="page" id="modPage">
-
 <button class="back-btn" onclick="backHome()">⬅ กลับ</button>
 
 <a class="download-item" href="#">
-🎯 ยิงตัวโดนหัว V1
-<br>
-<small>กดเพื่อดาวโหลด</small>
+🎯 ยิงตัวโดนหัว V1<br><small>กดเพื่อดาวโหลด</small>
 </a>
 
 <a class="download-item" href="#">
-🎯 ยิงตัวโดนหัว V2
-<br>
-<small>กดเพื่อดาวโหลด</small>
+🎯 ยิงตัวโดนหัว V2<br><small>กดเพื่อดาวโหลด</small>
 </a>
 
-<a class="download-item" href="#">
-💥 ขยายดาเมจ
-<br>
-<small>กดเพื่อดาวโหลด</small>
+<a class="download-item" href="https://www.mediafire.com/file/4gy73xxex93xiox/file.apk/file" target="_blank">
+💥 ขยายดาเมจ<br><small>กดเพื่อดาวโหลด</small>
 </a>
 
-<a class="download-item" href="#">
-🔧 LK ROOT
-<br>
-<small>กดเพื่อดาวโหลด</small>
+<a class="download-item" href="https://www.mediafire.com/file/81x0p6pjqxwhhfd/file.apk/file" target="_blank">
+🔧 LK ROOT<br><small>กดเพื่อดาวโหลด</small>
 </a>
-
 </div>
 
-<!-- 📦 RESOURCE PAGE -->
+<!-- 📦 RESOURCE -->
 <div class="page" id="resourcePage">
-
 <button class="back-btn" onclick="backHome()">⬅ กลับ</button>
 
-<a class="download-item" href="#">
-📦 ฟีฟายธรรมดา
-<br>
-<small>กดเพื่อดาวโหลด</small>
+<a class="download-item" href="https://www.mediafire.com/file/z0jpmwi5g4bzryw/file.zip/file" target="_blank">
+📦 ฟีฟายธรรมดา<br><small>กดเพื่อดาวโหลด</small>
 </a>
 
-<a class="download-item" href="#">
-📦 ฟีฟายแม็ก
-<br>
-<small>กดเพื่อดาวโหลด</small>
+<a class="download-item" href="https://www.mediafire.com/file/1c0s6zsp894ldnu/file.zip/file" target="_blank">
+📦 ฟีฟายแม็ก<br><small>กดเพื่อดาวโหลด</small>
 </a>
-
 </div>
 
-<!-- 🛠 TOOL PAGE -->
+<!-- 🛠 TOOL -->
 <div class="page" id="toolPage">
-
 <button class="back-btn" onclick="backHome()">⬅ กลับ</button>
 
-<a class="download-item" href="#">
-⚡ VPN NO ADS
-<br>
-<small>กดเพื่อดาวโหลด</small>
+<a class="download-item" href="https://www.mediafire.com/file/x45a5ah7aofthlt/VPN-NO-ADS_GOLFMINITV.apk/file?dkey=9hlqpu39cdo&r=1241" target="_blank">
+⚡ VPN NO ADS<br><small>กดเพื่อดาวโหลด</small>
 </a>
 
-<a class="download-item" href="#">
-🗂️ MT MANAGER
-<br>
-<small>กดเพื่อดาวโหลด</small>
+<a class="download-item" href="https://www.mediafire.com/file/7o4m8dw2mcj5vci/MTManager+By+%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%9F%E0%B9%89%E0%B8%B2+%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%9F%E0%B8%A3%E0%B8%B5.apk/file" target="_blank">
+🗂️ MT MANAGER<br><small>กดเพื่อดาวโหลด</small>
 </a>
-
 </div>
 
 <script>
 
-/* 📂 เปิดหน้า */
 function showPage(id){
-
 document.getElementById('mainMenu').style.display='none';
-
-document.querySelectorAll('.page').forEach(p=>{
-p.style.display='none';
-});
-
+document.querySelectorAll('.page').forEach(p=>p.style.display='none');
 document.getElementById(id).style.display='block';
 }
 
-/* ⬅ กลับ */
 function backHome(){
-
 document.getElementById('mainMenu').style.display='grid';
-
-document.querySelectorAll('.page').forEach(p=>{
-p.style.display='none';
-});
-
+document.querySelectorAll('.page').forEach(p=>p.style.display='none');
 }
 
-/* ❄️ หิมะ */
+/* ❄️ SNOW */
 const snow=document.getElementById('snow');
 const ctx=snow.getContext('2d');
 
@@ -341,40 +253,33 @@ snow.width=window.innerWidth;
 snow.height=window.innerHeight;
 
 let flakes=[];
-
-for(let i=0;i<100;i++){
+for(let i=0;i<80;i++){
 flakes.push({
 x:Math.random()*snow.width,
 y:Math.random()*snow.height,
-r:Math.random()*4+1
+r:Math.random()*3+1
 });
 }
 
-function drawSnow(){
-
+function draw(){
 ctx.clearRect(0,0,snow.width,snow.height);
-
 ctx.fillStyle='white';
 
 flakes.forEach(f=>{
-
 ctx.beginPath();
 ctx.arc(f.x,f.y,f.r,0,Math.PI*2);
 ctx.fill();
 
 f.y+=1;
-
 if(f.y>snow.height){
 f.y=0;
 f.x=Math.random()*snow.width;
 }
-
 });
 
-requestAnimationFrame(drawSnow);
+requestAnimationFrame(draw);
 }
-
-drawSnow();
+draw();
 
 </script>
 
